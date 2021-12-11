@@ -29,8 +29,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-
+  google_fonts: ^2.1.0
+  get: ^4.5.1
+  animated_bottom_navigation_bar: ^0.3.2
+  image_picker: ^0.8.4+4
+  emoji_picker_flutter: ^1.0.8
+  flutter_keyboard_visibility: ^5.1.0
+  path_provider: ^2.0.7
+  audioplayers: ^0.20.1
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -45,7 +51,6 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
-  google_fonts: ^2.1.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -58,6 +63,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/sounds/
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
