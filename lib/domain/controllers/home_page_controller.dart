@@ -32,7 +32,7 @@ class HomePageController extends GetxController{
 
 
   void selectorMenu(String opcionSeleccionada,int contadorIndiceFeeds){
-    print(opcionSeleccionada);
+    //print(opcionSeleccionada);
     if(opcionSeleccionada=="eliminar"){
       Get.dialog(
         AlertDialog(
@@ -54,17 +54,27 @@ class HomePageController extends GetxController{
   }
 
     void eliminarFeed(int contadorIndiceFeeds){
-    print("F");
     mapData.remove(contadorIndiceFeeds);
-    print(mapData);
+    reorganizarMap();
     Get.back();
   }
+
+   void reorganizarMap(){
+    RxInt len = 0.obs;
+    RxMap<int, Map<String, String>> newMap = {0: {"":""}}.obs;
+    mapData.forEach((oldK,v) => agregarMap(newMap, v, len));
+    mapData = newMap;
+   }
+   void agregarMap(Map map, Map<String, String>  v, RxInt len){
+    map[len.value] = v;
+    len.value++;
+   }
 
   //-----Generador Feeds
   Container generarFeed(int contadorIndiceFeeds){
 
       var mapUser = mapData[contadorIndiceFeeds];
-      print(mapUser);
+      //print(mapUser);
       bool visibilityText = true;
       if( mapUser?["textFeed"] == ""){
         visibilityText = false;

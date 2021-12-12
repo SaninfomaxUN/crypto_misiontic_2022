@@ -184,7 +184,7 @@ class CrearFeed extends StatelessWidget {
                                 onTap: crearFeedsController.closeEmojiKeyboard,
                                 onChanged: (text) {
                                   crearFeedsController.textoIngresado.value = text;
-                                  print(crearFeedsController.textoIngresado);
+                                  //print(crearFeedsController.textoIngresado);
                                 },
                                 maxLines: 30,
                                 maxLength:200,
