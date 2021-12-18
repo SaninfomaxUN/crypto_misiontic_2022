@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:login_signup_auth/ui/pages/authentication/login.dart';
+import 'package:crypto_misiontic_2022/ui/pages/authentication/login.dart';
+import 'package:crypto_misiontic_2022/ui/pages/home_page.dart';
 
 class FirebaseCentral extends StatelessWidget {
   const FirebaseCentral({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class FirebaseCentral extends StatelessWidget {
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return const HomePage();
+          return HomePage();
         } else {
           return const LogInScreen();
         }

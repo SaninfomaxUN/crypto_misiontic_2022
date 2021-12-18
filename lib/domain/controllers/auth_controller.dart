@@ -20,32 +20,32 @@ class AuthenticationController extends GetxController {
   }
 
 
-Future<void> signUp(email, password) async {
-  try {
-    await FirebaseAuth.instance
-        .createUserWithEmailAndPassword(email: email, password: password);
-    // ignore: void_checks
-    return Future.value(true);
-  } on FirebaseAuthException catch (e) {
-    if (e.code == 'weak-password') {
-      return Future.error('La Contraseña no cumple con las politicas!');
-    } else if (e.code == 'email-already-in-use') {
-      return Future.error('El Correo Electronico ya se encuentra registrado!');
+  Future<void> signUp(email, password) async {
+    try {
+      await FirebaseAuth.instance
+          .createUserWithEmailAndPassword(email: email, password: password);
+      // ignore: void_checks
+      return Future.value(true);
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'weak-password') {
+        return Future.error('La Contraseña no cumple con las politicas!');
+      } else if (e.code == 'email-already-in-use') {
+        return Future.error('El Correo Electronico ya se encuentra registrado!');
+      }
     }
   }
-}
 
-Future<void> logOut() async {
-  try {
-    await FirebaseAuth.instance.signOut();
-  } catch (e) {
-    return Future.error(e.toString());
+  Future<void> logOut() async {
+    try {
+      await FirebaseAuth.instance.signOut();
+    } catch (e) {
+      return Future.error(e.toString());
+    }
   }
-}
   String userEmail() {
     String email = FirebaseAuth.instance.currentUser!.email ?? "a@a.com";
     return email;
-}
+  }
   String getUid() {
     String uid = FirebaseAuth.instance.currentUser!.uid;
     return uid;

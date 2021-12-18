@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loggy/loggy.dart';
-import 'package:login_signup_auth/domain/controller/auth_controller.dart';
-import 'package:login_signup_auth/ui/firebase_central.dart';
+import 'package:crypto_misiontic_2022/domain/controllers/auth_controller.dart';
+import 'package:crypto_misiontic_2022/ui/firebase_central.dart';
 
 class MyApp extends StatelessWidget {
   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
