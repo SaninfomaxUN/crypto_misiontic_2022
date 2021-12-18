@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1028527409648",
+    "project_id": "misiontic-crypto",
+    "storage_bucket": "misiontic-crypto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028527409648:android:ee3319668f2315e9ea3535",
+        "android_client_info": {
+          "package_name": "com.example.crypto_misiontic_2022"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028527409648-5bgo7nmju2eq7liek5edd4ps7jn12q7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgxIopH3kmXebbl4ncugoNmoJsGnHc3pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028527409648-5bgo7nmju2eq7liek5edd4ps7jn12q7c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
