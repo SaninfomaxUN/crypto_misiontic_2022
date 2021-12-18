@@ -23,7 +23,12 @@ class HomePageController extends GetxController{
 
   void onItemTapped(int index) {
       selectedIndex = index;
-      mostrarMantenimiento();
+      if(index==0){
+        redireccionarMensajeria();
+      }else{
+        mostrarMantenimiento();
+      }
+
       update();
     }
   void changeScreenNewMessage(){
@@ -384,4 +389,10 @@ class HomePageController extends GetxController{
   }
 
 
+  //Redireccionar a Mensajes
+
+  void redireccionarMensajeria(){
+    //Get.to(()=> instancia de los mensajes,transition: Transition.leftToRight);
+    print("----Esperando instancia  de la mensajeria-----");
+  }
 }
