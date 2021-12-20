@@ -40,9 +40,10 @@ dependencies:
 
   #Login Controllers
   firebase_auth: ^3.3.4
-  firebase_core: ^1.7.0
+  firebase_core: ^1.10.6
   firebase_database: ^8.0.0
   fluttertoast: ^8.0.8
+  intl: ^0.17.0
 
 
   # The following adds the Cupertino Icons font to your application.
