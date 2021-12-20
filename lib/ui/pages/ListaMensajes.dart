@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:mensajeria/domain/data/mensajes.dart';
-import 'package:mensajeria/domain/data/mensaje_data.dart';
+import 'package:crypto_misiontic_2022/domain/data/mensajes.dart';
+import 'package:crypto_misiontic_2022/domain/data/mensaje_data.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
-import 'package:mensajeria/ui/pages/mensajeWidget.dart';
+import 'package:crypto_misiontic_2022/ui/pages/mensajeWidget.dart';
 
 
 
