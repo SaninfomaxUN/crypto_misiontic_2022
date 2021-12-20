@@ -7,6 +7,7 @@ import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:get/get.dart';
+import 'package:crypto_misiontic_2022/ui/pages/mensajeWidget.dart';
 
 class HomePageController extends GetxController{
 
