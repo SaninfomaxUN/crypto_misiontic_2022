@@ -395,6 +395,5 @@ class HomePageController extends GetxController{
 
   void redireccionarMensajeria(){
     Get.to(()=> ListaMensajes(),transition: Transition.leftToRight);
-    print("----Lista instancia  de la mensajeria-----");
   }
 }
