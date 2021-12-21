@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                     color: Color(0xFFFEB801),
                     icon: Icon(Icons.logout_outlined, color: Color(0xFFFEB801),),
                     iconSize: 40,
-                    onPressed: null,
+                    onPressed: homePageController.signOut,
                   ),
 
                 ],

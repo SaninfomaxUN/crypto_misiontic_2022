@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:login_signup_auth/ui/pages/authentication/login.dart';
+import 'package:crypto_misiontic_2022/ui/pages/authentication/login.dart';
 
 class resetPassword extends StatefulWidget {
   @override

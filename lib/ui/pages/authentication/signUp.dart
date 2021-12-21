@@ -63,7 +63,7 @@ class _signUpScreenState extends State<SignupScreen> {
                   child: Text(
                     "Cryptocurrency",
                     style: GoogleFonts.marcellusSc(
-                      fontSize: 44,
+                      fontSize: 38,
                       color: Color(0xFFFEB801),
                     ),
                   ),
@@ -75,15 +75,21 @@ class _signUpScreenState extends State<SignupScreen> {
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   child: Row(
                     children: [
-                      Text(
-                        '¿Ya tienes una cuenta?',
-                        style: GoogleFonts.marcellusSc(
-                            color: Colors.white, fontSize: 22),
+                      Container(
+                        child: Text(
+                          '¿Ya tienes una cuenta?',
+                          style: GoogleFonts.marcellusSc(
+                              color: Colors.white, fontSize: 20),
+                          softWrap: true,
+                        ),
                       ),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      GestureDetector(
+
+                      Flexible(
+                       child:
+                           Align(
+                             alignment: Alignment.centerRight,
+                             child:
+                              GestureDetector(
                         onTap: () {
                           Navigator.push(
                               context,
@@ -101,6 +107,8 @@ class _signUpScreenState extends State<SignupScreen> {
                           ),
                         ),
                       )
+                           )
+                           ),
                     ],
                   ),
                 ),

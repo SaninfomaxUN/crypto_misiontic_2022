@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:crypto_misiontic_2022/ui/pages/crear_feeds.dart';
 import 'package:crypto_misiontic_2022/ui/pages/home_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/state_manager.dart';
 import 'package:get/route_manager.dart';
@@ -12,7 +13,10 @@ import 'package:crypto_misiontic_2022/ui/pages/listamensajes.dart';
 
 class HomePageController extends GetxController{
 
-
+  signOut() async {
+    final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+    await _firebaseAuth.signOut();
+  }
   //------Indice BottomBar Seleccionado------------
   int selectedIndex = 0;
 

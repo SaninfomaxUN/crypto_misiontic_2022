@@ -64,7 +64,7 @@ class _LogInScreenState extends State<LogInScreen> {
                         Text(
                           "Cryptocurrency",
                           style: GoogleFonts.marcellusSc(
-                            fontSize: 47,
+                            fontSize: 42,
                             color: const Color(0xFFFEB801),
                           ),
                         ),
@@ -73,17 +73,20 @@ class _LogInScreenState extends State<LogInScreen> {
                         ),
                         Row(
                           children: [
-                            Text(
-                              'Inicio de Sesión',
-                              style: GoogleFonts.marcellusSc(
-                                color: Colors.white,
-                                fontSize: 35,
+                            Container(
+                              child: Text(
+                                'Inicio de Sesión',
+                                style: GoogleFonts.marcellusSc(
+                                  color: Colors.white,
+                                  fontSize: 35,
+                                ),
                               ),
                             ),
-                            const SizedBox(
-                              width: 5,
-                            ),
-                            GestureDetector(
+
+                            Container(
+                              //width: ,
+                            child:
+                              GestureDetector(
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -98,10 +101,11 @@ class _LogInScreenState extends State<LogInScreen> {
                                   decoration: TextDecoration.underline,
                                   decorationThickness: 1,
                                   color: Color(0xFFFEB801),
-                                  fontSize: 18,
+                                  fontSize: 15,
                                   fontWeight: FontWeight.w700,
                                 ),
                               ),
+                            ),
                             ),
                           ],
                         ),
