@@ -7,7 +7,15 @@ import 'package:crypto_misiontic_2022/domain/controllers/auth_controller.dart';
 import 'package:crypto_misiontic_2022/ui/firebase_central.dart';
 
 class MyApp extends StatelessWidget {
-  final Future<FirebaseApp> _initialization = Firebase.initializeApp();
+  final Future<FirebaseApp> _initialization = Firebase.initializeApp(
+        options: FirebaseOptions(
+          apiKey: "AIzaSyBgxIopH3kmXebbl4ncugoNmoJsGnHc3pg",
+          authDomain: "mensajeria.firebaseapp.com",
+          appId: "1:1028527409648:android:ee3319668f2315e9ea3535",
+          messagingSenderId: "messagingSenderId",
+          projectId: "mensajeria-1020e",
+          databaseURL: "https://misiontic-crypto-default-rtdb.firebaseio.com/"
+      ));
 
   MyApp({Key? key}) : super(key: key);
 
